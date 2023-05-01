@@ -1,6 +1,34 @@
-# Micro-frontend's NextJS
+# Microfrontends with Next.js
 
-In this repo i implements two next JS application using micro-frontend architecture.
+This is a sample project that demonstrates how to implement microfrontends using Next.js. The project includes three microfrontends: header, menu, and consumer.
+
+## Overview
+
+Each microfrontend is a separate Next.js application that can be developed and deployed independently. The header and menu microfrontends provide UI components that can be consumed by other microfrontends, such as the consumer.
+
+The consumer microfrontend is an example of how to consume the header and menu microfrontends in a single Next.js application. It shows how to use module federation to load the microfrontends at runtime, and how to use them in a shared layout.
+
+## Folder structure
+```css
+├── consumer
+│   ├── components
+│   ├── pages
+│   └── ...
+├── header
+│   ├── components
+│   ├── pages
+│   └── ...
+├── menu
+│   ├── components
+│   ├── pages
+│   └── ...
+└── ...
+
+```
+* `consumer`: The main Next.js application that consumes the header and menu microfrontends.
+* `header`: A microfrontend that provides a header component with an avatar and a drawer menu.
+* `menu`: A microfrontend that provides a menu component with links to different pages.
+
 
 # How to run
 
@@ -9,6 +37,11 @@ In this repo i implements two next JS application using micro-frontend architect
 3. Run `npm run dev` in root folder
 4. Open `localhost:3005` in your browser
 
+Each microfrontend will be available at a different port:
+
+* header: http://localhost:3000
+* menu: http://localhost:3004
+* consumer: http://localhost:3005
 # How to build
 
 1. Run `npm run build` in root folder
@@ -79,3 +112,12 @@ module.exports = {
 };
 
 ```
+
+## Credits
+This project was created by Hugo Oliveira.
+
+
+License 
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Feel free to customize this README to your liking and add any additional information that you think would be helpful for others using your application.

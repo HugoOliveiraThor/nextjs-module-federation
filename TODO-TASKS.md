@@ -12,3 +12,4 @@
 - [ ] Remove non used files from project generates by create-next-app 
 - [ ] Use router in the consumer to simulate when calling an application
 - [ ] Improve README.md docs
+- [ ] Create the LICENSE file
