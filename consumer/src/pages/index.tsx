@@ -72,7 +72,7 @@ export default function Home() {
         <Menu/>
       </div>
       <br />
-      <h1 style={{paddingTop: '100px'}}>I'm the shell running on port 3000 and consuming this two applications</h1>
+      <h1 style={{paddingTop: '100px'}}>I'm the consumer running on port 3000 and consuming this two applications</h1>
     </>
   );
 }
