@@ -1,0 +1,11 @@
+{
+  "scripts": {
+    "install": "cd ./header && npm i && cd ../consumer && npm i && cd ../dashboard && npm i",
+    "dev": "concurrently \"cd header; npm run dev\" \"cd consumer; npm run dev\" \"cd dashboard; npm run dev\" ",
+    "start": "concurrently \"cd header; npm run start\" \"cd consumer; npm run start\" \"cd dashboard; npm run start\" ",
+    "build": "cd ./header && npm run build && cd ../consumer && npm run build && cd ../dashboard && npm run build"
+  },
+  "dependencies": {
+    "concurrently": "^7.6.0"
+  }
+}

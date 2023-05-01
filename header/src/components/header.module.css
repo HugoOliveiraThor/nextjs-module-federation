@@ -1,0 +1,23 @@
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 64px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e5e5e5;
+  z-index: 1;
+}
+
+.logo {
+  font-size: 24px;
+  font-weight: 600;
+  margin-left: 24px;
+}
+
+.avatar {
+  margin-right: 24px;
+}
