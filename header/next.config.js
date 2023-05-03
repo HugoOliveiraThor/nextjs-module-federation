@@ -1,5 +1,5 @@
 /** @type {import('next').NextConfig} */
-const NextFederationPlugin = require("@module-federation/nextjs-mf");
+const NextFederationPlugin = require('@module-federation/nextjs-mf');
 
 module.exports = {
   webpack(config, options) {
@@ -8,10 +8,10 @@ module.exports = {
     if (!options.isServer) {
       config.plugins.push(
         new NextFederationPlugin({
-          name: "header",
-          filename: "static/chunks/remoteEntry.js",
+          name: 'header',
+          filename: 'static/chunks/remoteEntry.js',
           exposes: {
-            "./component/Header": "./src/components/Header.tsx",
+            './component/Header': './src/components/Header.tsx',
           },
           shared: {},
         })
