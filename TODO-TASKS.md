@@ -18,3 +18,4 @@
 - [ ] Use router in the consumer to simulate when calling an application
 - [ ] Improve README.md docs
 - [ ] Create the LICENSE file
+- [ ] Create a CHANGELOG.md file to control the versions
